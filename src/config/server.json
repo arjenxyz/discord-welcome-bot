@@ -1,0 +1,18 @@
+{
+  "roles": {
+    "announcementrole": "1019644932375445615",
+    "giveawayrole": "1004340628672495658",
+    "pollrole": "1033484079766704238",
+    "statusrole": "1005613571729784913",  
+    "italyanrole":"1030884301065162802",
+    "acceptrole": "1078092716115755080" 
+  },
+  "images": {
+      "rulesimage": "https://cdn.discordapp.com/attachments/1055095061894938674/1077944173010894971/404d44728065564cdaf896783864299f.gif",  
+    "rolesimage": "https://media.discordapp.net/attachments/1034529647846768711/1048950432854196274/standard_24.gif",
+    "welcomeimage": "https://cdn.discordapp.com/icons/719915577380044810/a_6e3bc866f11187af4883964ad1189274.gif?size=2048" 
+  },
+  "channel": {
+    "feedback": "1078092589221302352"  
+  }
+}
