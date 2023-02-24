@@ -1,3 +1,6 @@
+
+// MAİN Dosyası 
+
 require('./console/watermark')
 const { Client, Partials, Collection } = require('discord.js');
 const colors = require('colors');
