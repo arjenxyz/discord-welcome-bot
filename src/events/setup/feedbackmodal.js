@@ -15,8 +15,8 @@ client.on('interactionCreate', async interaction => {
     const feedback = interaction.fields.getTextInputValue('feedback');
 
     const embed = new EmbedBuilder()
-        .setAuthor({ name: `${interaction.user.username} adlı kullanıcı tarafından gönderildi`, iconURL: interaction.user.displayAvatarURL() })
-        .setTitle(`**Hey! Sanırım bir sorunumuz var** : \n${feedback}`)
+        .setAuthor({iconURL: interaction.user.displayAvatarURL() , name: `${interaction.user.username}`})
+        .setTitle(`**Sorun Bildirimi**`)
         .setDescription(`**Hey! Sanırım bir sorunumuz var** : \n${feedback}`)
     
     try {
