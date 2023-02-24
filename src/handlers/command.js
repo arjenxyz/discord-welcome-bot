@@ -10,10 +10,10 @@ module.exports = (client) => {
             let pull = require(`../commands/${dir}/${file}`);
             if (pull.name) {
                 client.commands.set(pull.name, pull);
-                console.log(`[HANDLER - COMMAND] Loaded a file : ${pull.name}`.green)
+                console.log(`İTALYAN bir dosya yüklendi: ${pull.name}`.green)
             } else {
                 console.log("\n" + "----------------------------------------".red)
-                console.log(`[HANDLER - COMMAND] Couldn't load the file ${file}, missing module name value.`.red.bold)
+                console.log(`[Hey Hataaaa alıyoruzz] ${file} dosyası yüklenemedi, modül adı değeri eksik.`.red.bold)
                 console.log("----------------------------------------".red)
                 continue;
             };
