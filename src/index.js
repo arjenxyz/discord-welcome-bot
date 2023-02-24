@@ -1,4 +1,3 @@
-
 // MAİN Dosyası 
 
 require('./console/watermark')
@@ -41,8 +40,7 @@ module.exports = client;
 client.login(process.env.TOKEN)
   .catch((err) => {
     console.log("[CRUSH] Botunuza bağlanırken bir şeyler ters gitti" + "\n");
-    console.log("[CRUSH] DiscordAPI'den Kaynaklanan Hata
- :" + err);
+    console.log("[CRUSH] DiscordAPI'den Kaynaklanan Hata:" + err);
     process.exit();
   })
 
@@ -55,8 +53,7 @@ process.on("unhandledRejection", async (err) => {
 const ms = require("ms");
 setInterval(() => {
   if (!client || !client.user) {
-    console.log("İstemci Giriş Yapmıyor, İşlem Sonlandırılıyor
-")
+    console.log("İstemci Giriş Yapmıyor, İşlem Sonlandırılıyor")
     process.kill(1);
   }
 }, ms("1m"));
