@@ -40,13 +40,14 @@ module.exports = client;
 
 client.login(process.env.TOKEN)
   .catch((err) => {
-    console.log("[CRUSH] Something went wrong while connecting to your bot" + "\n");
-    console.log("[CRUSH] Error from DiscordAPI :" + err);
+    console.log("[CRUSH] Botunuza bağlanırken bir şeyler ters gitti" + "\n");
+    console.log("[CRUSH] DiscordAPI'den Kaynaklanan Hata
+ :" + err);
     process.exit();
   })
 
 process.on("unhandledRejection", async (err) => {
-  console.log(`[ANTI - CRUSH] Unhandled Rejection : ${err}`.red.bold)
+  console.log(`[ANTI - CRUSH] İşlenmemiş Reddetme : ${err}`.red.bold)
   console.log(err)
 })
 
@@ -54,7 +55,8 @@ process.on("unhandledRejection", async (err) => {
 const ms = require("ms");
 setInterval(() => {
   if (!client || !client.user) {
-    console.log("Client Not Login, Process Kill")
+    console.log("İstemci Giriş Yapmıyor, İşlem Sonlandırılıyor
+")
     process.kill(1);
   }
 }, ms("1m"));
