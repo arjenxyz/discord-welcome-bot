@@ -9,7 +9,7 @@ module.exports = {
 client.on('interactionCreate', async interaction => {
     if (!interaction.isModalSubmit()) return;
     if (interaction.customId === 'feedbackmodal') {
-        await interaction.reply({ content: 'Sorununuz Yetkililere İletildi. Lütfen bekleyiniz..', ephemeral: true });
+        await interaction.reply({ content: 'Sorun iletildi', ephemeral: true });
     }
     const channel = interaction.guild.channels.cache.get(`${server.channel.feedback}`)
     const feedback = interaction.fields.getTextInputValue('feedback');
