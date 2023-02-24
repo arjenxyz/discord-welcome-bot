@@ -16,6 +16,7 @@ module.exports = {
         new ButtonBuilder()
           .setCustomId('rule')
           .setLabel('Teyit Kuralları')
+     
           .setStyle(ButtonStyle.Success)
           .setEmoji("📖"),
 
@@ -42,7 +43,7 @@ module.exports = {
 
     const embed = new EmbedBuilder()
       .setAuthor({ name: `${message.guild.name}` })
-      .setDescription(`<a:inanamiyorum:1053274250896752680> Merhaba! Hoş geldin,\nKayıt olmak için **Teyit Kuralları** butonuna tıklayınız.`)     .setImage(server.images.welcomeimage)
+      .setDescription("<a:merhaba:1053271931903803393> **Sunucumuza Hoş Geldin,**\n`Kayıt olmadan önce bilmeni istediğimiz birkaç kural var.`\n<a:mmm:1057739088431681537> **Kayıt odasını görüntülemeden önce **__Teyit Kuralları__** butonuna tıklayınız.**")     .setImage(server.images.welcomeimage)
       .setColor(`#0CF2FF`)
     message.channel.send({
       embeds: [embed],
