@@ -1,12 +1,12 @@
 {
   "roles": {
-    "acceptrole": "517036450286665729" 
+    "acceptrole": "teyitsiz rol ID" 
   },
   "images": {
       "rulesimage": "https://cdn.discordapp.com/attachments/1055095061894938674/1077944173010894971/404d44728065564cdaf896783864299f.gif",  
     "welcomeimage": "https://cdn.discordapp.com/icons/719915577380044810/a_6e3bc866f11187af4883964ad1189274.gif?size=2048" 
   },
   "channel": {
-    "feedback": "Sorun-bildir-log Kanalı"  
+    "feedback": "Sorun-bildir-log Kanalı ID"  
   }
 }
