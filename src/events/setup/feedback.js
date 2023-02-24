@@ -15,7 +15,7 @@ client.on('interactionCreate', async interaction => {
 
         const feedback = new TextInputBuilder()
             .setCustomId('feedback')
-            .setLabel("Sorunu Bildir")
+            .setLabel("Sorunu yaz")
             .setStyle(TextInputStyle.Paragraph)
             .setRequired(true)
             .setMinLength(5)
