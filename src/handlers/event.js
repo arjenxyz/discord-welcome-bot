@@ -10,10 +10,10 @@ module.exports = (client) => {
             let pull = require(`../events/${dir}/${file}`);
             if (pull.name) {
                 client.events.set(pull.name, pull);
-                console.log(`[HANDLER - EVENTS] Loaded a file : ${pull.name}`.green)
+                console.log(`[İtalyan] Bir dosya yüklendi: ${pull.name}`.green)
             } else {
                 console.log("\n" + "----------------------------------------".red)
-                console.log(`[HANDLER - EVENTS] Couldn't load the file ${file}, missing name or aliases`.red.bold)
+                console.log(`[Hey İtalyan Beklenmedik Bir Hata Aldık!] ${file} dosyası yüklenemedi `.red.bold)
                 console.log("----------------------------------------".red)
                 continue;
             }
