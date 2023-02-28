@@ -64,9 +64,14 @@ const http = require("http");
 http.createServer((_, res) => res.end("Made By İtalyan")).listen(8080)
 //__________________________________________________________________________________//
 
+//___________________________________kayıt-etiket___________________________________________//
+client.on("guildMemberAdd", async member => {
+if(member.user.bot) return;
+member.guild.channels.cache.get("1079382505754472510").send(`${member}, Kayıt olmak için kurallarımızı kabul etmen gerek!\n<#1079382531289387068>`)
+});
+//__________________________________________________________________________________//
 
-
-//____________________________________Botu este tutma ___________________________________________//
+//____________________________________Botu-este-tutma ___________________________________________//
 
 client.on('ready', () => {
   joinVoiceChannel({ 
