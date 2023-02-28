@@ -44,7 +44,7 @@ module.exports = {
     const embed = new EmbedBuilder()
       .setAuthor({ name: `${message.guild.name}` })
       .setDescription("<a:merhaba:1053271931903803393> **Sunucumuza Hoş Geldin,**\n`Kayıt olmadan önce bilmeni istediğimiz birkaç kural var.`\n<a:mmm:1057739088431681537> **Kayıt odasını görüntülemeden önce **__Teyit Kuralları__** butonuna tıklayınız.**")     .setImage(server.images.welcomeimage)
-      .setColor(`#0CF2FF`)
+      .setColor(`#2f3136`)
     message.channel.send({
       embeds: [embed],
       components: [row]
