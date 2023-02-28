@@ -1,6 +1,7 @@
 // MAİN Dosyası 
 
 require('./console/watermark')
+const { joinVoiceChannel } = require('@discordjs/voice');
 const { Client, Partials, Collection } = require('discord.js');
 const colors = require('colors');
 const config = require('./config/config.json');
