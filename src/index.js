@@ -68,7 +68,7 @@ http.createServer((_, res) => res.end("Made By İtalyan")).listen(8080)
 //___________________________________kayıt-etiket___________________________________________//
 client.on("guildMemberAdd", async member => {
 if(member.user.bot) return;
-member.guild.channels.cache.get("1079382505754472510").send(`${member}, Kayıt olmak için kurallarımızı kabul etmen gerek!\n<#1079382531289387068>`)
+member.guild.channels.cache.get("Kanal-ID").send(`${member}, Kayıt olmak için kurallarımızı kabul etmen gerek!\n<#1079382531289387068>`)
 });
 //__________________________________________________________________________________//
 
@@ -76,9 +76,9 @@ member.guild.channels.cache.get("1079382505754472510").send(`${member}, Kayıt o
 
 client.on('ready', () => {
   joinVoiceChannel({ 
-channelId: "1078829008348786737", 
-guildId: "1078829007644147722",  
-adapterCreator: client.guilds.cache.get("1078829007644147722").voiceAdapterCreator
+channelId: "KANAL_ID", 
+guildId: "SERVER_ID",  
+adapterCreator: client.guilds.cache.get("SERVER_ID").voiceAdapterCreator
     }); 
 }); 
 //__________________________________________________________________________________//
