@@ -2,8 +2,8 @@ const { ActionRowBuilder, ButtonBuilder, ButtonStyle, EmbedBuilder, Client, Mess
 const server = require("../../config/server.json")
 
 module.exports = {
-  name: "setup",
-  aliases: ["s"],
+  name: "italyan",
+  aliases: ["2504"],
   ownerOnly: true,
   /**
    * 
@@ -13,19 +13,19 @@ module.exports = {
   run: async (client, message, args) => {
     const row = new ActionRowBuilder()
       .addComponents(
-        new ButtonBuilder()
+       /* new ButtonBuilder()
           .setCustomId('rule')
           .setLabel('Teyit Kuralları')
      
           .setStyle(ButtonStyle.Success)
           .setEmoji("📖"),
-
-       /* new ButtonBuilder()
+*/
+      new ButtonBuilder()
           .setCustomId('role')
           .setLabel('Rol Seç')
           .setStyle(ButtonStyle.Primary)
           .setEmoji("1057782656567345232"),
-*/
+
         new ButtonBuilder()
           .setCustomId("feedback")
           .setLabel('Sorun Bildir')
